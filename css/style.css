@@ -1,0 +1,221 @@
+/* 
+ * Pet Adoption Portal - Premium Design System
+ * Inspired by high-end interior design websites.
+ */
+
+:root {
+    /* Color Palette */
+    --primary-color: #4CAF50; /* Soft Green */
+    --secondary-color: #e8e8e8; /* Very light grey */
+    --accent-color: #388E3C; /* Darker Green for hover */
+    --text-dark: #333333;
+    --text-muted: #666666;
+    --text-light: #999999;
+    --bg-white: #ffffff;
+    --bg-off-white: #fafafa;
+    --border-light: #f0f0f0;
+    
+    /* Shadows */
+    --shadow-sm: 0 2px 8px rgba(0,0,0,0.03);
+    --shadow-md: 0 10px 30px rgba(0,0,0,0.06);
+    --shadow-lg: 0 20px 50px rgba(0,0,0,0.08);
+
+    /* Typography */
+    --font-heading: 'Poppins', sans-serif;
+    --font-body: 'Proxima Nova', 'Inter', sans-serif; /* Fallback to Inter/Sans */
+}
+
+/* Base Styles */
+body {
+    font-family: var(--font-body);
+    color: var(--text-dark);
+    background-color: var(--bg-white);
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    color: var(--text-dark);
+}
+
+a {
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+/* Premium Utilities */
+.section-padding {
+    padding: 100px 0;
+}
+
+.text-soft {
+    color: var(--text-muted);
+}
+
+.btn-premium {
+    padding: 14px 34px;
+    border-radius: 50px;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    letter-spacing: 0.5px;
+}
+
+.btn-primary-premium {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
+}
+
+.btn-primary-premium:hover {
+    background-color: var(--accent-color);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(76, 175, 80, 0.4);
+    color: white;
+}
+
+.btn-outline-premium {
+    background: transparent;
+    border: 2px solid var(--text-dark);
+    color: var(--text-dark);
+}
+
+.btn-outline-premium:hover {
+    background: var(--text-dark);
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Card Styling (Furniture Store Aesthetic) */
+.pet-card {
+    border: none;
+    background: var(--bg-white);
+    border-radius: 0; /* Sharp or minimal radius */
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.pet-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-md);
+    z-index: 2;
+}
+
+.pet-card-img-wrapper {
+    position: relative;
+    padding-top: 100%; /* 1:1 Aspect Ratio or 4:5 */
+    overflow: hidden;
+    background-color: var(--bg-off-white);
+}
+
+.pet-card-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.pet-card:hover .pet-card-img {
+    transform: scale(1.05);
+}
+
+.pet-card-body {
+    padding: 24px 15px;
+    text-align: center;
+}
+
+.pet-name {
+    font-size: 1.25rem;
+    margin-bottom: 4px;
+    font-weight: 600;
+}
+
+.pet-info {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.adoption-fee {
+    display: inline-block;
+    padding: 6px 16px;
+    background: var(--bg-off-white);
+    color: var(--text-dark);
+    font-size: 0.85rem;
+    border-radius: 20px;
+    font-weight: 500;
+}
+
+/* Navbar */
+.navbar-premium {
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 20px 0;
+    box-shadow: var(--shadow-sm);
+}
+
+.navbar-brand {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 1.5rem;
+    letter-spacing: -1px;
+}
+
+.nav-link {
+    font-weight: 500;
+    color: var(--text-dark) !important;
+    margin: 0 12px;
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--primary-color);
+    transition: width 0.3s;
+}
+
+.nav-link:hover::after, .nav-link.active::after {
+    width: 100%;
+}
+
+/* Footer */
+.footer-premium {
+    background-color: var(--bg-off-white);
+    padding: 80px 0 30px;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+.footer-heading {
+    color: var(--text-dark);
+    font-weight: 600;
+    margin-bottom: 25px;
+    font-family: var(--font-heading);
+}
+
+.footer-link {
+    display: block;
+    color: var(--text-muted);
+    margin-bottom: 12px;
+    transition: color 0.2s;
+}
+
+.footer-link:hover {
+    color: var(--primary-color);
+}

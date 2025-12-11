@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foster Application - PetPortal</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-premium sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">PetPortal</a>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pets.html">Available Pets</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Form Section -->
+    <section class="section-padding bg-light min-vh-100 d-flex align-items-center">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card border-0 shadow-lg rounded-4 overflow-hidden">
+                        <div class="p-5">
+                            <h2 class="mb-4 fw-bold text-center">Foster Application</h2>
+                            <p class="text-muted mb-5 small text-center">Thank you for opening your home to a pet in
+                                need.</p>
+
+                            <form id="fosterForm">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control bg-light border-0" id="fullName"
+                                                placeholder="Full Name" required>
+                                            <label for="fullName">Full Name</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="email" class="form-control bg-light border-0" id="email"
+                                                placeholder="Email" required>
+                                            <label for="email">Email Address</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="tel" class="form-control bg-light border-0" id="phone"
+                                                placeholder="Phone">
+                                            <label for="phone">Phone Number</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <select class="form-select bg-light border-0" id="homeType">
+                                                <option selected disabled value="">Select Home Type...</option>
+                                                <option>House with Yard</option>
+                                                <option>Apartment/Condo</option>
+                                                <option>Townhouse</option>
+                                            </select>
+                                            <label for="homeType">Home Type</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <select class="form-select bg-light border-0" id="fosterPreference">
+                                                <option selected disabled value="">Preferred Foster...</option>
+                                                <option>Adult Dogs</option>
+                                                <option>Puppies</option>
+                                                <option>Cats/Kittens</option>
+                                                <option>Medical Needs Pet</option>
+                                            </select>
+                                            <label for="fosterPreference">I'm interested in fostering</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <textarea class="form-control bg-light border-0" placeholder="Experience"
+                                                id="experience" style="height: 100px"></textarea>
+                                            <label for="experience">Current pets or previous experience?</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 mt-4">
+                                        <button type="submit" class="btn btn-primary-premium w-100 py-3 shadow">Submit
+                                            Application</button>
+                                    </div>
+                                </div>
+                            </form>
+
+                            <!-- Success Message -->
+                            <div id="successMessage" class="d-none text-center mt-4 p-4 bg-soft-green rounded">
+                                <i class="bi bi-heart-fill text-success display-4 mb-3"></i>
+                                <h4 class="fw-bold">We Received Your Application!</h4>
+                                <p class="text-muted small">Our Foster Coordinator will contact you within 24-48 hours.
+                                </p>
+                                <a href="index.html" class="btn btn-sm btn-outline-premium mt-2">Back to Home</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-premium mt-auto">
+        <div class="container">
+            <div class="row g-5 py-5">
+                <div class="col-lg-4">
+                    <h5 class="footer-heading">PetPortal</h5>
+                    <p class="mb-4">Dedicated to finding loving homes for every pet.</p>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-heading">Explore</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="footer-link">Home</a></li>
+                        <li><a href="pets.html" class="footer-link">Available Pets</a></li>
+                        <li><a href="about.html" class="footer-link">About Us</a></li>
+                        <li><a href="success_stories.html" class="footer-link">Success Stories</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-heading">Support</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="donate.html" class="footer-link">Donate</a></li>
+                        <li><a href="volunteer.html" class="footer-link">Volunteer</a></li>
+                        <li><a href="foster.html" class="footer-link">Foster</a></li>
+                        <li><a href="faqs.html" class="footer-link">FAQs</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-top border-light mt-5 pt-4 text-center">
+                <p class="small mb-0">&copy; 2024 PetPortal. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.getElementById('fosterForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            this.classList.add('d-none');
+            document.getElementById('successMessage').classList.remove('d-none');
+            document.getElementById('successMessage').classList.add('d-block');
+        });
+    </script>
+</body>
+
+</html>

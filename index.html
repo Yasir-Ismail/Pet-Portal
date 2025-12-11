@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetPortal - Find Your Perfect Companion</title>
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-premium sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">PetPortal</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pets.html">Available Pets</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <a href="contact.html" class="btn btn-primary-premium rounded-pill px-4">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="position-relative overflow-hidden w-100" style="height: 85vh; min-height: 600px;">
+        <img src="assets/hero_background.png" alt="Happy Dog" class="w-100 h-100 object-fit-cover"
+            style="object-position: center;">
+        <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
+            style="background: linear-gradient(90deg, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.8) 35%, rgba(255,255,255,0) 100%);">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h1 class="display-3 fw-bold mb-4" style="color: var(--text-dark);">Find Your <br><span
+                                style="color: var(--primary-color);">Soulmate</span></h1>
+                        <p class="lead mb-5" style="font-weight: 500; color: #444;">Adopting a pet is a journey of love.
+                            Discover companions waiting to fill your home with joy and unconditional affection.</p>
+                        <a href="pets.html" class="btn btn-primary-premium btn-lg">Find a Friend</a>
+                        <a href="about.html" class="btn btn-outline-premium btn-lg ms-3">Our Mission</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Featured Pets -->
+    <section class="section-padding bg-white">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="d-block text-uppercase text-muted small fw-bold mb-2">New Arrivals</span>
+                <h2 class="mb-5">Featured Pets</h2>
+            </div>
+
+            <div class="row g-4">
+                <!-- Pet Card 1 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="pet-card">
+                        <div class="pet-card-img-wrapper">
+                            <img src="assets/pet_dog_1.png" alt="Charlie" class="pet-card-img">
+                        </div>
+                        <div class="pet-card-body">
+                            <h3 class="pet-name">Charlie</h3>
+                            <div class="pet-info">Golden Retriever • 2 Yrs</div>
+                            <span class="adoption-fee">$150 Adoption Fee</span>
+                            <div class="mt-3">
+                                <a href="details.html" class="btn btn-sm btn-outline-dark rounded-pill px-3">View
+                                    Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Pet Card 2 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="pet-card">
+                        <div class="pet-card-img-wrapper">
+                            <img src="assets/pet_cat_1.png" alt="Luna" class="pet-card-img">
+                        </div>
+                        <div class="pet-card-body">
+                            <h3 class="pet-name">Luna</h3>
+                            <div class="pet-info">Siamese • 1 Yr</div>
+                            <span class="adoption-fee">$80 Adoption Fee</span>
+                            <div class="mt-3">
+                                <a href="details.html" class="btn btn-sm btn-outline-dark rounded-pill px-3">View
+                                    Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Pet Card 3 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="pet-card">
+                        <div class="pet-card-img-wrapper">
+                            <img src="assets/pet_rabbit_1.png" alt="Oreo" class="pet-card-img">
+                        </div>
+                        <div class="pet-card-body">
+                            <h3 class="pet-name">Oreo</h3>
+                            <div class="pet-info">Rabbit • 6 Mos</div>
+                            <span class="adoption-fee">$40 Adoption Fee</span>
+                            <div class="mt-3">
+                                <a href="details.html" class="btn btn-sm btn-outline-dark rounded-pill px-3">View
+                                    Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Pet Card 4 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="pet-card">
+                        <div class="pet-card-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+                                alt="Bella" class="pet-card-img">
+                        </div>
+                        <div class="pet-card-body">
+                            <h3 class="pet-name">Bella</h3>
+                            <div class="pet-info">Beagle • 3 Yrs</div>
+                            <span class="adoption-fee">$120 Adoption Fee</span>
+                            <div class="mt-3">
+                                <a href="details.html" class="btn btn-sm btn-outline-dark rounded-pill px-3">View
+                                    Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5">
+                <a href="pets.html" class="btn btn-link text-dark text-decoration-none fw-bold">View All Pets <i
+                        class="bi bi-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="section-padding" style="background-color: var(--bg-off-white);">
+        <div class="container">
+            <div class="row g-5 text-center">
+                <div class="col-md-4">
+                    <div class="p-4">
+                        <i class="bi bi-heart-pulse text-success display-4 mb-4"></i>
+                        <h4>Health Checked</h4>
+                        <p class="text-muted mt-3">Every pet receives a comprehensive health check, vaccinations, and
+                            love before they meet you.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4">
+                        <i class="bi bi-house-door text-success display-4 mb-4"></i>
+                        <h4>Home Trial</h4>
+                        <p class="text-muted mt-3">We offer a 2-week home trial period to ensure the perfect fit for
+                            both you and your new companion.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4">
+                        <i class="bi bi-patch-check text-success display-4 mb-4"></i>
+                        <h4>Lifetime Support</h4>
+                        <p class="text-muted mt-3">Our team provides lifetime advice and behavioral support for every
+                            adopted pet.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="section-padding bg-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="https://images.unsplash.com/photo-1570018144715-43110363d70a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
+                        alt="Our Mission" class="img-fluid rounded-0 shadow-lg"
+                        style="max-height: 600px; width: 100%; object-fit: cover;">
+                </div>
+                <div class="col-lg-6 ps-lg-5">
+                    <span class="text-uppercase text-primary fw-bold small">Our Mission</span>
+                    <h2 class="display-6 mb-4 mt-2">Connecting Hearts, <br>Saving Lives.</h2>
+                    <p class="text-muted mb-4">We believe every animal deserves a loving home. Our shelter provides a
+                        safe haven for pets in need, rehabilitating them physically and emotionally until they find
+                        their forever families.</p>
+                    <p class="text-muted">Since 2010, we have successfully matched over 5,000 pets with loving owners
+                        across the country.</p>
+                    <a href="about.html" class="btn btn-outline-dark rounded-pill mt-3 px-4">Read Our Story</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section-padding" style="background-color: #f8f9fa;">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="mb-4">Happy Tails</h2>
+                <div style="width: 60px; height: 3px; background: var(--primary-color); margin: 0 auto;"></div>
+            </div>
+
+            <div id="testimonialCarousel" class="carousel slide text-center" data-bs-ride="carousel">
+                <div class="carousel-inner" style="max-width: 800px; margin: 0 auto;">
+                    <div class="carousel-item active">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" class="rounded-circle mb-4 shadow"
+                            width="80" height="80" alt="Sarah">
+                        <p class="lead fst-italic mb-4">"Adopting Buster was the best decision we ever made. The process
+                            was smooth, professional, and full of care."</p>
+                        <h5 class="fw-bold">Sarah Jenkins</h5>
+                        <p class="text-muted small">Adopted 'Buster'</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" class="rounded-circle mb-4 shadow"
+                            width="80" height="80" alt="Mike">
+                        <p class="lead fst-italic mb-4">"I was amazed by how well-cared for the animals are. The team
+                            truly loves what they do."</p>
+                        <h5 class="fw-bold">Mike Ross</h5>
+                        <p class="text-muted small">Adopted 'Milo'</p>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-premium">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4">
+                    <h5 class="footer-heading">PetPortal</h5>
+                    <p class="mb-4">Dedicated to finding loving homes for every pet. We are a non-profit organization
+                        focused on animal welfare. Join us in making a difference.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-muted fs-5"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-muted fs-5"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-muted fs-5"><i class="bi bi-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-heading">Explore</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="footer-link">Home</a></li>
+                        <li><a href="pets.html" class="footer-link">Available Pets</a></li>
+                        <li><a href="about.html" class="footer-link">About Us</a></li>
+                        <li><a href="success_stories.html" class="footer-link">Success Stories</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-heading">Support</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="donate.html" class="footer-link">Donate</a></li>
+                        <li><a href="volunteer.html" class="footer-link">Volunteer</a></li>
+                        <li><a href="foster.html" class="footer-link">Foster</a></li>
+                        <li><a href="faqs.html" class="footer-link">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="footer-heading">Newsletter</h5>
+                    <p class="small text-muted mb-3">Subscribe to get updates on new arrivals and events.</p>
+                    <form action="#">
+                        <div class="input-group">
+                            <input type="email" class="form-control border-end-0 rounded-start-pill ps-3"
+                                placeholder="Email Address">
+                            <button class="btn btn-primary-premium rounded-end-pill px-4" type="button">Join</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="border-top border-light mt-5 pt-4 text-center">
+                <p class="small mb-0">&copy; 2024 PetPortal. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
